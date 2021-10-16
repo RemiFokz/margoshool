@@ -1,0 +1,65 @@
+@mixin font-h($number: 1) {
+  font-weight: 500;
+  @if $number == 1 {
+    font-size: rem(28px);
+    line-height: rem(35px);
+  } @else if $number == 2 {
+    font-size: rem(24px);
+    line-height: rem(30px);
+  } @else if $number == 3 {
+    font-size: rem(20px);
+    line-height: 25px;
+  } @else if $number == 4 {
+    font-size: rem(18px);
+    line-height: rem(20px);
+  }
+}
+
+@mixin font-body($number: 1) {
+  font-style: normal;
+  letter-spacing: 0.15px;
+
+  @if $number == 1 {
+    font-size: rem(16px);
+    line-height: rem(20px);
+  } @else if $number == 2 {
+    font-size: rem(14px);
+    line-height: rem(20px);
+  } @else if $number == 3 {
+    font-size: rem(12px);
+    line-height: rem(18px);
+  }
+}
+
+@mixin dfc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin dfcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin dfjb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin alignTop {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin fmob {
+  @media screen and(max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin ftab {
+  @media screen and(max-width: $tab) {
+    @content;
+  }
+}
