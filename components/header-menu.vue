@@ -1,4 +1,8 @@
-<template><div></div></template>
+<template>
+  <ui-container>
+    <nav>menu</nav>
+  </ui-container>
+</template>
 
 <script>
 export default {}
