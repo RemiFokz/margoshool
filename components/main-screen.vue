@@ -3,32 +3,42 @@
     <div class="left">
       <h1>
         Обучение <br />наращиванию ресниц<br />
-        в Санкт-Петербурге
+        в <span>Санкт-Петербурге</span>
       </h1>
+
       <ui-button>Записаться</ui-button>
     </div>
     <div class="right">
-      <img src="" alt="" />
+      <img src="/main.svg" alt="Обучение" />
     </div>
   </div>
 </template>
 
 <script>
-import uiButton from './ui-button.vue'
-export default {
-  components: { uiButton },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
 .main-wrapper {
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: rem(16px);
   display: grid;
   @include bm;
+  min-height: rem(600px);
+  align-items: center;
   .left {
     h1 {
       margin-bottom: rem(72px);
+      span {
+        color: $primary;
+      }
+    }
+  }
+  .right {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

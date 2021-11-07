@@ -2,7 +2,7 @@
   <div class="soon-wrapper">
     <h2>Ближайшие курсы</h2>
     <div class="content">
-      <img src="" alt="" />
+      <img src="/time.svg" alt="Скоро" />
       <div class="right">
         <CourceCard />
       </div>
@@ -14,7 +14,7 @@
 export default {}
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .soon-wrapper {
   @include bm;
   .content {

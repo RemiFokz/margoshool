@@ -71,12 +71,12 @@
 }
 
 @mixin hm {
-  margin-bottom: rem(32px);
+  margin-bottom: rem(64px);
   @include ftab {
-    margin-bottom: rem(24xp);
+    margin-bottom: rem(48xp);
   }
   @include fmob {
-    margin-bottom: rem(16px);
+    margin-bottom: rem(32px);
   }
 }
 

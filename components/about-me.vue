@@ -13,7 +13,7 @@
         быть
       </p>
     </div>
-    <img src="" alt="" />
+    <img class="me" src="/me.png" alt="Марго" />
   </div>
 </template>
 
@@ -21,7 +21,7 @@
 export default {}
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .about-wrapper {
   @include bm;
   border-radius: $brad;
@@ -30,5 +30,8 @@ export default {}
   padding: rem(32px);
   @include halfgrid;
   @include font-body(4);
+  .me {
+    width: 100%;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="our-wrapper">
     <h2>Наши преимущества</h2>
     <div class="content">
-      <img src="" alt="" />
+      <img src="/we.svg" alt="Наши преимущества" />
       <ul class="list">
         <li v-for="name in adv" :key="name">{{ name }}</li>
       </ul>
@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .our-wrapper {
   @include bm;
   .content {
