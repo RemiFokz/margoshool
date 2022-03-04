@@ -5,8 +5,8 @@
       <CourceCard />
       <div class="info">
         <ul class="list">
-          <li v-for="name in courses" :key="name">
-            <ui-button>{{ name }}</ui-button>
+          <li v-for="(name, i) in courses" :key="name" @click="active = i">
+            <ui-button woh :secondary="active !== i">{{ name }}</ui-button>
           </li>
         </ul>
         <img src="" alt="" />
@@ -21,6 +21,7 @@ export default {
   components: { uiButton },
   data() {
     return {
+      active: 0,
       courses: [
         'Базовый курс',
         '2-3D объем',
@@ -32,11 +33,11 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .all-wrapper {
   @include bm;
   .content {
-    @include halfgrid;
+    @include twogrid;
     ul {
       display: flex;
       flex-wrap: wrap;

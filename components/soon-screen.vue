@@ -18,7 +18,12 @@ export default {}
 .soon-wrapper {
   @include bm;
   .content {
-    @include halfgrid;
+    @include thirdgrid;
+    .right {
+      justify-items: end;
+      display: grid;
+      width: 100%;
+    }
   }
 }
 </style>

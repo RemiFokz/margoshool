@@ -23,12 +23,22 @@ export default {
       type: Boolean,
       default: false,
     },
+    big: {
+      type: Boolean,
+      default: false,
+    },
+    woh: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     classes() {
       return {
         secondary: this.secondary,
         small: this.small,
+        big: this.big,
+        woh: this.woh,
       }
     },
     tag() {
@@ -56,7 +66,7 @@ export default {
   @include font-body(1);
   text-transform: capitalize;
   font-weight: 500;
-  &:hover {
+  &:hover:not(.woh) {
     color: $primary;
     background: transparent;
     border: 1px solid $primary;
@@ -66,7 +76,7 @@ export default {
     color: $primary;
     background: transparent;
     border: 1px solid $primary;
-    &:hover {
+    &:hover:not(.woh) {
       color: white;
       background: $primary;
       border: 1px solid $primary;
@@ -76,6 +86,11 @@ export default {
     padding: rem(8px) rem(16px);
     @include font-body(2);
     border-radius: $bradsmall;
+    font-weight: 500;
+  }
+  &.big {
+    padding: rem(16px) rem(32px);
+    @include font-body(4);
     font-weight: 500;
   }
 }

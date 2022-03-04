@@ -3,9 +3,7 @@
     <ui-container class="menu-wrapper">
       <ui-logo />
       <ul class="menu">
-        <ul class="menu-item all">
-          Все курсы +
-        </ul>
+        <li class="menu-item all">Все курсы +</li>
         <li v-for="{ name } in menu" :key="name" class="menu-item">
           {{ name }}
         </li>

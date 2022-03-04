@@ -6,7 +6,7 @@
         в <span>Санкт-Петербурге</span>
       </h1>
 
-      <ui-button>Записаться</ui-button>
+      <ui-button big>Записаться</ui-button>
     </div>
     <div class="right">
       <img src="/main.svg" alt="Обучение" />
@@ -27,6 +27,7 @@ export default {}
   min-height: rem(600px);
   align-items: center;
   .left {
+    margin-top: rem(40px);
     h1 {
       margin-bottom: rem(72px);
       span {

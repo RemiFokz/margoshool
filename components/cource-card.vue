@@ -31,14 +31,17 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .card-wrapper {
-  min-height: rem(400px);
+  min-height: rem(480px);
   padding: rem(24px);
+  max-width: rem(400px);
   border-radius: $brad;
   display: grid;
+  width: 100%;
   grid-template-rows: max-content 1fr max-content;
   background: $secondary;
+  color: white;
   h4 {
     margin-bottom: rem(48px);
   }

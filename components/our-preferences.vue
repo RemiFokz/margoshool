@@ -30,12 +30,17 @@ export default {
 .our-wrapper {
   @include bm;
   .content {
-    @include halfgrid;
+    @include thirdgrid;
+    align-items: start;
+    img {
+      width: 100%;
+    }
     ul {
       display: grid;
       grid-gap: rem(16px);
       @include font-body(4);
       font-weight: 500;
+      margin-top: rem(100px);
     }
   }
 }

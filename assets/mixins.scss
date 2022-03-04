@@ -61,12 +61,12 @@
 }
 
 @mixin bm {
-  margin-bottom: rem(120px);
+  margin-bottom: rem(160px);
   @include ftab {
-    margin-bottom: rem(80px);
+    margin-bottom: rem(120px);
   }
   @include fmob {
-    margin-bottom: rem(60px);
+    margin-bottom: rem(80px);
   }
 }
 
@@ -83,5 +83,18 @@
 @mixin halfgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: rem(32px);
+}
+
+
+@mixin twogrid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: rem(32px);
+}
+
+@mixin thirdgrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
   grid-gap: rem(32px);
 }
